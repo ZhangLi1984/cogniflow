@@ -1,0 +1,525 @@
+/* ===================================
+   Apple-Inspired Design System
+   =================================== */
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Custom Scrollbar - Minimal Apple Style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===================================
+   Navigation - Apple Style
+   =================================== */
+
+.apple-nav {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    transition: all 0.3s ease;
+}
+
+.apple-nav-link {
+    position: relative;
+    padding: 4px 0;
+}
+
+.apple-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.apple-nav-link:hover::after {
+    width: 100%;
+}
+
+.apple-button {
+    background: #0071e3;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 980px;
+    transition: all 0.3s ease;
+}
+
+.apple-button:hover {
+    background: #0077ED;
+    transform: scale(1.02);
+}
+
+.apple-button-large {
+    display: inline-block;
+    background: #0071e3;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 980px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.apple-button-large:hover {
+    background: #0077ED;
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 113, 227, 0.3);
+}
+
+.apple-button-secondary-large {
+    display: inline-block;
+    background: transparent;
+    color: #0071e3;
+    padding: 14px 28px;
+    border-radius: 980px;
+    border: 2px solid #0071e3;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.apple-button-secondary-large:hover {
+    background: #0071e3;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* ===================================
+   Typography - Apple Style
+   =================================== */
+
+.apple-hero-title {
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+}
+
+.apple-hero-subtitle {
+    letter-spacing: -0.01em;
+}
+
+.apple-section-title {
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.apple-section-subtitle {
+    letter-spacing: -0.01em;
+}
+
+.apple-gradient-text {
+    background: linear-gradient(90deg, #0071e3 0%, #00c6fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ===================================
+   Cards & Components
+   =================================== */
+
+.apple-service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.apple-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 113, 227, 0.2);
+}
+
+.apple-product-feature {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-product-feature.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.apple-product-feature.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.apple-stat-card {
+    text-align: center;
+    padding: 32px;
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.apple-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.apple-value-card {
+    padding: 32px;
+    background: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.apple-value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.apple-team-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-team-card:hover {
+    transform: translateY(-8px);
+}
+
+.apple-team-card img {
+    transition: all 0.4s ease;
+}
+
+.apple-team-card:hover img {
+    transform: scale(1.05);
+}
+
+.apple-tech-card {
+    padding: 40px 32px;
+    background: white;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.apple-tech-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===================================
+   Links & Interactions
+   =================================== */
+
+.apple-link-arrow {
+    display: inline-flex;
+    align-items: center;
+    color: #0071e3;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.apple-link-arrow:hover {
+    color: #0077ED;
+}
+
+.apple-link-arrow i {
+    transition: transform 0.3s ease;
+}
+
+.apple-link-arrow:hover i {
+    transform: translateX(4px);
+}
+
+/* ===================================
+   Hero Section
+   =================================== */
+
+.apple-hero-device {
+    position: relative;
+    max-width: 1000px;
+    animation: heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.apple-hero-device img {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-hero-device:hover img {
+    transform: scale(1.02);
+}
+
+/* ===================================
+   Forms - Apple Style
+   =================================== */
+
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
+    border-color: #0071e3 !important;
+    box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.1) !important;
+}
+
+input, textarea, select {
+    transition: all 0.3s ease;
+}
+
+/* ===================================
+   Rating Stars
+   =================================== */
+
+.rating-star {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.rating-star:hover {
+    transform: scale(1.15);
+}
+
+/* ===================================
+   Animations
+   =================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease;
+}
+
+/* Scroll animations */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* ===================================
+   Glassmorphism Effects
+   =================================== */
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===================================
+   Back to Top Button
+   =================================== */
+
+#backToTop {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#backToTop:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 113, 227, 0.4);
+}
+
+/* ===================================
+   Footer
+   =================================== */
+
+.apple-footer {
+    font-size: 14px;
+}
+
+.apple-footer a {
+    transition: color 0.2s ease;
+}
+
+/* ===================================
+   Mobile Responsiveness
+   =================================== */
+
+@media (max-width: 768px) {
+    .apple-hero-title {
+        font-size: 48px !important;
+    }
+    
+    .apple-section-title {
+        font-size: 40px !important;
+    }
+    
+    .apple-hero-device {
+        padding: 0 20px;
+    }
+}
+
+/* ===================================
+   Dark Mode Support (Optional)
+   =================================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0071e3;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+    left: 10px;
+}
+
+/* Focus visible for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #0071e3;
+    outline-offset: 2px;
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+    }
+}
+
+/* ===================================
+   Performance Optimizations
+   =================================== */
+
+/* GPU acceleration for transforms */
+.apple-service-card,
+.apple-team-card,
+.apple-tech-card,
+.apple-button-large {
+    will-change: transform;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===================================
+   Loading States
+   =================================== */
+
+.spinner {
+    border: 3px solid rgba(0, 113, 227, 0.1);
+    border-top: 3px solid #0071e3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===================================
+   Utility Classes
+   =================================== */
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.transition-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
