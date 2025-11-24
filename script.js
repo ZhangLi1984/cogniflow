@@ -8,184 +8,184 @@
 
 const colorThemes = [
     {
-        name: 'Ocean Blue',
-        primary: '#0071e3',
-        primaryHover: '#0077ED',
-        primaryLight: '#E3F2FD',
-        primaryDark: '#004C99',
-        secondary: '#00c6fb',
-        accent: '#4A90E2'
+        name: 'Warm Amber',
+        primary: '#FF8A4C',
+        primaryHover: '#FF9D66',
+        primaryLight: '#FFF0E5',
+        primaryDark: '#E67339',
+        secondary: '#FFB380',
+        accent: '#FF6B35'
     },
     {
-        name: 'Sunset Orange',
-        primary: '#FF6B35',
-        primaryHover: '#FF7A47',
-        primaryLight: '#FFE8E0',
-        primaryDark: '#E65A2E',
-        secondary: '#FFA07A',
-        accent: '#FF8C42'
+        name: 'Coral Sunset',
+        primary: '#FF7A59',
+        primaryHover: '#FF8B6D',
+        primaryLight: '#FFEBE5',
+        primaryDark: '#E66847',
+        secondary: '#FFB399',
+        accent: '#FF9573'
     },
     {
-        name: 'Forest Green',
-        primary: '#2ECC71',
-        primaryHover: '#36D278',
-        primaryLight: '#E8F8F5',
-        primaryDark: '#27AE60',
-        secondary: '#52D681',
-        accent: '#1ABC9C'
-    },
-    {
-        name: 'Royal Purple',
-        primary: '#8B5CF6',
-        primaryHover: '#9D6DF7',
-        primaryLight: '#F3EAFF',
-        primaryDark: '#7C3AED',
-        secondary: '#A78BFA',
-        accent: '#C084FC'
-    },
-    {
-        name: 'Ruby Red',
-        primary: '#E74C3C',
-        primaryHover: '#EC5B4E',
-        primaryLight: '#FDECEA',
-        primaryDark: '#C0392B',
-        secondary: '#F1948A',
-        accent: '#FF6B6B'
-    },
-    {
-        name: 'Cyan Wave',
-        primary: '#06B6D4',
-        primaryHover: '#0891B2',
-        primaryLight: '#E0F7FA',
-        primaryDark: '#0E7490',
-        secondary: '#22D3EE',
-        accent: '#67E8F9'
-    },
-    {
-        name: 'Amber Glow',
+        name: 'Golden Honey',
         primary: '#F59E0B',
-        primaryHover: '#F6A823',
+        primaryHover: '#FBBF24',
         primaryLight: '#FEF3C7',
         primaryDark: '#D97706',
-        secondary: '#FBBF24',
-        accent: '#FCD34D'
+        secondary: '#FCD34D',
+        accent: '#F59E0B'
     },
     {
-        name: 'Indigo Dream',
-        primary: '#6366F1',
-        primaryHover: '#7477F3',
-        primaryLight: '#EEF2FF',
-        primaryDark: '#4F46E5',
-        secondary: '#818CF8',
-        accent: '#A5B4FC'
+        name: 'Peach Blossom',
+        primary: '#FFAB91',
+        primaryHover: '#FFBCA5',
+        primaryLight: '#FFE8E0',
+        primaryDark: '#FF8A65',
+        secondary: '#FFCCBC',
+        accent: '#FF7043'
     },
     {
-        name: 'Rose Pink',
-        primary: '#F43F5E',
-        primaryHover: '#F55170',
-        primaryLight: '#FFE4E6',
-        primaryDark: '#E11D48',
-        secondary: '#FB7185',
-        accent: '#FDA4AF'
+        name: 'Terracotta',
+        primary: '#E07856',
+        primaryHover: '#E68B6A',
+        primaryLight: '#FFEEE8',
+        primaryDark: '#CC6644',
+        secondary: '#F0A68F',
+        accent: '#D96B4C'
     },
     {
-        name: 'Emerald Spring',
-        primary: '#10B981',
-        primaryHover: '#22C55E',
-        primaryLight: '#D1FAE5',
-        primaryDark: '#059669',
-        secondary: '#34D399',
-        accent: '#6EE7B7'
+        name: 'Apricot Dream',
+        primary: '#FFAB73',
+        primaryHover: '#FFBD8A',
+        primaryLight: '#FFF0E5',
+        primaryDark: '#FF9A5C',
+        secondary: '#FFCCA3',
+        accent: '#FF8F52'
     },
     {
-        name: 'Violet Night',
-        primary: '#7C3AED',
-        primaryHover: '#8B5CF6',
-        primaryLight: '#EDE9FE',
-        primaryDark: '#6D28D9',
-        secondary: '#A78BFA',
-        accent: '#C4B5FD'
+        name: 'Burnt Sienna',
+        primary: '#E97451',
+        primaryHover: '#ED8766',
+        primaryLight: '#FFEAE3',
+        primaryDark: '#D6623F',
+        secondary: '#F5A68C',
+        accent: '#E25C3D'
     },
     {
-        name: 'Coral Reef',
-        primary: '#FF7E67',
-        primaryHover: '#FF8F7A',
-        primaryLight: '#FFE9E5',
-        primaryDark: '#FF6B52',
-        secondary: '#FFA294',
-        accent: '#FFB3A7'
+        name: 'Tangerine',
+        primary: '#FF9966',
+        primaryHover: '#FFAA7A',
+        primaryLight: '#FFF2E8',
+        primaryDark: '#FF8852',
+        secondary: '#FFBB99',
+        accent: '#FF7744'
     },
     {
-        name: 'Sky Blue',
-        primary: '#3B82F6',
-        primaryHover: '#4D8FF9',
-        primaryLight: '#DBEAFE',
-        primaryDark: '#2563EB',
-        secondary: '#60A5FA',
-        accent: '#93C5FD'
+        name: 'Papaya',
+        primary: '#FFAA66',
+        primaryHover: '#FFBB7A',
+        primaryLight: '#FFF5EB',
+        primaryDark: '#FF9952',
+        secondary: '#FFCC99',
+        accent: '#FF8844'
     },
     {
-        name: 'Lime Fresh',
-        primary: '#84CC16',
-        primaryHover: '#92D324',
-        primaryLight: '#ECFCCB',
-        primaryDark: '#65A30D',
-        secondary: '#A3E635',
-        accent: '#BEF264'
+        name: 'Mango Tango',
+        primary: '#FFB347',
+        primaryHover: '#FFC266',
+        primaryLight: '#FFF8EB',
+        primaryDark: '#FFA533',
+        secondary: '#FFD699',
+        accent: '#FF9E1F'
     },
     {
-        name: 'Magenta Pop',
-        primary: '#D946EF',
-        primaryHover: '#DD59F1',
-        primaryLight: '#FAE8FF',
-        primaryDark: '#C026D3',
-        secondary: '#E879F9',
-        accent: '#F0ABFC'
+        name: 'Butterscotch',
+        primary: '#FFAA66',
+        primaryHover: '#FFBB7A',
+        primaryLight: '#FFF5EB',
+        primaryDark: '#FF9952',
+        secondary: '#FFCC99',
+        accent: '#FF8844'
     },
     {
-        name: 'Teal Ocean',
-        primary: '#14B8A6',
-        primaryHover: '#17C4B0',
-        primaryLight: '#CCFBF1',
-        primaryDark: '#0F766E',
-        secondary: '#2DD4BF',
-        accent: '#5EEAD4'
+        name: 'Cantaloupe',
+        primary: '#FFAA7F',
+        primaryHover: '#FFBB92',
+        primaryLight: '#FFF3EB',
+        primaryDark: '#FF996B',
+        secondary: '#FFCCB3',
+        accent: '#FF8855'
     },
     {
-        name: 'Chocolate Brown',
-        primary: '#92400E',
-        primaryHover: '#A34B15',
-        primaryLight: '#FEF3C7',
-        primaryDark: '#78350F',
-        secondary: '#B45309',
-        accent: '#D97706'
+        name: 'Papaya Whip',
+        primary: '#FFB380',
+        primaryHover: '#FFC299',
+        primaryLight: '#FFF5EB',
+        primaryDark: '#FFA366',
+        secondary: '#FFD6B8',
+        accent: '#FF9A5C'
     },
     {
-        name: 'Slate Modern',
-        primary: '#475569',
-        primaryHover: '#5A6A7A',
-        primaryLight: '#F1F5F9',
-        primaryDark: '#334155',
-        secondary: '#64748B',
-        accent: '#94A3B8'
+        name: 'Peach Melba',
+        primary: '#FFAD7A',
+        primaryHover: '#FFBE8E',
+        primaryLight: '#FFF2E8',
+        primaryDark: '#FF9C66',
+        secondary: '#FFCFAD',
+        accent: '#FF8B52'
     },
     {
-        name: 'Mint Green',
-        primary: '#00D9A3',
-        primaryHover: '#00E5AD',
-        primaryLight: '#E0FFF8',
-        primaryDark: '#00B88A',
-        secondary: '#33E0B5',
-        accent: '#66E7C7'
+        name: 'Apricot Nectar',
+        primary: '#FFAA73',
+        primaryHover: '#FFBB87',
+        primaryLight: '#FFF0E5',
+        primaryDark: '#FF995F',
+        secondary: '#FFCCA3',
+        accent: '#FF884B'
     },
     {
-        name: 'Crimson Fire',
-        primary: '#DC2626',
-        primaryHover: '#E13838',
-        primaryLight: '#FEE2E2',
-        primaryDark: '#B91C1C',
-        secondary: '#EF4444',
-        accent: '#F87171'
+        name: 'Salmon Pink',
+        primary: '#FF9980',
+        primaryHover: '#FFAA94',
+        primaryLight: '#FFF0EB',
+        primaryDark: '#FF886B',
+        secondary: '#FFBBA8',
+        accent: '#FF7755'
+    },
+    {
+        name: 'Caramel',
+        primary: '#D4915E',
+        primaryHover: '#DDA372',
+        primaryLight: '#F9EDE3',
+        primaryDark: '#C17F4A',
+        secondary: '#E8B890',
+        accent: '#C77D46'
+    },
+    {
+        name: 'Copper Glow',
+        primary: '#D4915E',
+        primaryHover: '#DDA372',
+        primaryLight: '#F9EDE3',
+        primaryDark: '#C17F4A',
+        secondary: '#E8B890',
+        accent: '#C77D46'
+    },
+    {
+        name: 'Sandstone',
+        primary: '#E6A87C',
+        primaryHover: '#EDB890',
+        primaryLight: '#FBF0E6',
+        primaryDark: '#D99768',
+        secondary: '#F2C9A8',
+        accent: '#DF9660'
+    },
+    {
+        name: 'Autumn Spice',
+        primary: '#E89B6D',
+        primaryHover: '#EDAC81',
+        primaryLight: '#FBEEE3',
+        primaryDark: '#DD8A59',
+        secondary: '#F3BFA0',
+        accent: '#E18855'
     }
 ];
 
@@ -816,7 +816,7 @@ const getCurrentTheme = () => {
 const currentTheme = getCurrentTheme();
 
 console.log(
-    '%cWelcome to TechVision Solutions! 🚀',
+    '%cWelcome to Harvest Bee Limited! 🚀',
     `font-size: 20px; font-weight: bold; color: ${currentTheme.primary};`
 );
 console.log(
